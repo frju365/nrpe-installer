@@ -36,9 +36,7 @@ if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 # IP
 #=================================================
 
-echo "What is your server ip ?"
-ip=0.0.0.0
-#read ip
+read -p "What is your server ip ?" ip
 
 #=================================================
 # RETRIEVE ARGUMENTS FROM THE MANIFEST AND VAR
